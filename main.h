@@ -5,6 +5,11 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/**
+ * struct specifier_fn - a function pair
+ * @spec: char - the format specifier
+ * @print: function to print the data
+ */
 typedef struct
 {
 	char spec;
