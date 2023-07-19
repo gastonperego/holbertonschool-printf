@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * print_str - prints a string of characters
+ *
+ * @list: variadic list where the function will find the string to print
+ *
+ * Return: number of characters printed
+ */
 int print_str(va_list list)
 {
 	int count;

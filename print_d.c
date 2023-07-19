@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * print_d - prints an integer
+ *
+ * @list: variadic list where the function will find the integer to print
+ *
+ * Return: number of character printed
+ */
 int print_d(va_list list)
 {
 	unsigned int num, count_z, count, i;

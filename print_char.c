@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * print_char - prints a char
+ *
+ * @list: variadic list where the function will find the char to print
+ *
+ * Return: 1
+ */
 int print_char(va_list list)
 {
 	char c;

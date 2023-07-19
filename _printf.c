@@ -1,6 +1,14 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include "main.h"
+/**
+ * _printf - prints the arguments given in the indicated format
+ *
+ * @format: it gives the function the format in which the arguments must be
+ * printed
+ *
+ * Return: number of cahracters printed
+ */
 
 int _printf(const char *format, ...)
 {
