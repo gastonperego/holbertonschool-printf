@@ -10,7 +10,7 @@
  * @spec: char - the format specifier
  * @print: function to print the data
  */
-typedef struct
+typedef struct specifier_fn
 {
 	char spec;
 	int (*print)(va_list);
