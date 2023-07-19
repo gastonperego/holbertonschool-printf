@@ -13,8 +13,11 @@ int print_str(va_list list)
 
 	s = va_arg(list, char *);
 
-	if (*s == '\0')
-		return (0);
+	if (s == NULL)
+	{
+		write(1, "(nil)", 5);
+		return (5);
+	}
 
 	count = 0;
 
