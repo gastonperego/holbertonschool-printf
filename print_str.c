@@ -15,8 +15,8 @@ int print_str(va_list list)
 
 	if (s == NULL)
 	{
-		write(1, "(NULL)", 6);
-		return (6);
+		write(1, "(nil)", 5);
+		return (5);
 	}
 
 	count = 0;
