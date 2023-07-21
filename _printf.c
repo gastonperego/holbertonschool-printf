@@ -37,21 +37,15 @@ int _printf(const char *format, ...)
 					_putchar(format[i]);
 					count++;
 					_putchar(format[i + 1]);
-					count++;
-				};
-			}
+					count++; } }
 			else
-			count += func_percent(format[i + 1])(list);
-
-			i++;
-		}
+				count += func_percent(format[i + 1])(list);
+			i++; }
 		else
 		{
 			_putchar(format[i]);
-			count++;
-		}
-		i++;
-	}
+			count++; }
+		i++; }
 	va_end(list);
 	return (count);
 }
