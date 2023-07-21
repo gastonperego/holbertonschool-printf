@@ -1,25 +1,21 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HEADERFILE
+#define HEADERFILE
 
 #include <stdarg.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-/**
- * struct specifier_fn - a function pair
- * @spec: char - the format specifier
- * @print: function to print the data
- */
-typedef struct specifier_fn
+int _printf(const char *format, ...);
+
+typedef struct a
 {
-	char spec;
-	int (*print)(va_list);
-} specifier_fn;
+	char c;
+	int (*f)(va_list list);
+} func_select;
 
-int print_d(va_list list);
-int print_str(va_list list);
+void _putchar(char c);
+int (*func_percent(char c))(va_list);
+int print_int(va_list list);
 int print_char(va_list list);
-int _printf(const char *, ...);
-
+int print_string(va_list list);
 #endif
-
