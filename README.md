@@ -1,4 +1,4 @@
-# Project PRINTF
+# printf
 
 This project contains a custom implementation of the `_printf` function, which mimics the behavior of the standard C library function `printf`. The `_printf` function allows you to format and print various data types to the standard output.
 
